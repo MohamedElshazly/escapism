@@ -63,12 +63,12 @@ export default function IndexPage() {
 		<>
 			<div ref={ref1} id="blob" className="absolute left-[50%] top-[50%] aspect-[1/1] h-[25vmax] translate-x-[-50%] translate-y-[-50%] animate-rotate rounded-[50%] bg-white bg-gradient-to-r from-[#7FFFD4] to-[#4916af]"></div>
 			<div className="absolute z-10 h-[100%] w-[100%] overflow-hidden backdrop-blur-[9vmax]"></div>
-			<div className="absolute left-[50%] top-[50%] z-20 translate-x-[-50%] translate-y-[-50%] py-0 font-future">
+			<div className="absolute left-[50%] top-[50%]  z-20 flex translate-x-[-50%] translate-y-[-50%] flex-col items-center justify-center py-0 font-future">
 				<h1 data-value="HI, I'M SHAZLY" ref={ref2} className="mb-4 text-4xl">HI, I'M SHAZLY</h1>
 				<h2 data-value="I'M A WEB DEVELOPER" ref={ref3}>I'M A WEB DEVELOPER</h2>
 			</div>
 				<div className="absolute left-[43%] top-[60%] z-20">
-					<Link href="/about" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary font-future" })}>About me!</Link>
+					<Link href="/about" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary font-future hover:border-primary" })}>About me!</Link>
 				</div>
 		</>
 	)
