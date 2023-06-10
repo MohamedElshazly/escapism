@@ -3,7 +3,6 @@
 
 import Link from "next/link"
 
-import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import { useEffect, useRef, useState } from "react";
 
@@ -12,23 +11,11 @@ export default function IndexPage() {
 	const [interval2, __] = useState<any>(null);
 
 
-	const ref1 = useRef<HTMLDivElement>(null);
 	const ref2 = useRef<HTMLHeadingElement>(null);
 	const ref3 = useRef<HTMLHeadingElement>(null);
 	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	const move = (element: any, x: number, y: number) => {
-		function frame() {
-			element.animate({
-				left: `${x}px`,
-				top: `${y}px`,
-			}, { duration: 5000, fill: 'forwards' })
-		}
-		frame();
-	}
-
 	const hackerEffect = (interval: any, element: any, e: any) => {
-		console.log(e.target.dataset.value);
 		let iterations = 0;
 		clearInterval(interval);
 		interval = setInterval(() => {
@@ -40,15 +27,9 @@ export default function IndexPage() {
 		}, 50);
 	}
 	useEffect(() => {
-		const blob = ref1.current as HTMLDivElement;
 		const h1 = ref2.current as HTMLHeadingElement;
 		const h2 = ref3.current as HTMLHeadingElement;
-		// const p = ref3.current as HTMLParagraphElement;
-		document.addEventListener('mousemove', (e) => {
-			const { clientX, clientY } = e;
-			move(blob, clientX, clientY);
-		}
-		);
+
 		h1.onmouseover = (e) => {
 			hackerEffect(interval1, h1, e);
 		};
@@ -61,8 +42,6 @@ export default function IndexPage() {
 
 	return (
 		<>
-			<div ref={ref1} id="blob" className="absolute left-[50%] top-[50%] aspect-[1/1] h-[25vmax] translate-x-[-50%] translate-y-[-50%] animate-rotate rounded-[50%] bg-white bg-gradient-to-r from-[#7FFFD4] to-[#4916af]"></div>
-			<div className="absolute z-10 h-[100%] w-[100%] overflow-hidden backdrop-blur-[9vmax]"></div>
 			<div className="absolute left-[50%] top-[50%]  z-20 flex translate-x-[-50%] translate-y-[-50%] flex-col items-center justify-center py-0 font-future">
 				<h1 data-value="HI, I'M SHAZLY" ref={ref2} className="mb-4 text-4xl">HI, I'M SHAZLY</h1>
 				<h2 data-value="I'M A WEB DEVELOPER" ref={ref3}>I'M A WEB DEVELOPER</h2>

@@ -8,6 +8,8 @@ import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import localFont from '@next/font/local'
+import { CoolEffect } from "@/components/CoolEffect"
+
 
 export const metadata: Metadata = {
   title: {
@@ -53,8 +55,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
+							<CoolEffect>
               <SiteHeader />
-              <div className="flex-1">{children}</div>
+              	<div className="flex items-center justify-center">{children}</div>
+							</CoolEffect>
             </div>
             <TailwindIndicator />
           </ThemeProvider>
