@@ -42,13 +42,11 @@ export default function IndexPage() {
 
 	return (
 		<>
-			<div className="absolute left-[50%] top-[50%]  z-20 flex translate-x-[-50%] translate-y-[-50%] flex-col items-center justify-center py-0 font-future">
+			<div className="font-future absolute left-[50%] top-[50%] z-20 flex translate-x-[-50%] translate-y-[-50%] flex-col items-center justify-center py-0">
 				<h1 data-value="HI, I'M SHAZLY" ref={ref2} className="mb-4 text-4xl">HI, I'M SHAZLY</h1>
 				<h2 data-value="I'M A WEB DEVELOPER" ref={ref3}>I'M A WEB DEVELOPER</h2>
+				<Link href="/about" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary font-future hover:border-primary mt-5" })}>About me!</Link>
 			</div>
-				<div className="absolute left-[43%] top-[60%] z-20">
-					<Link href="/about" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary font-future hover:border-primary" })}>About me!</Link>
-				</div>
 		</>
 	)
 }
