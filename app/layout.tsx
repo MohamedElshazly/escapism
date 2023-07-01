@@ -50,13 +50,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				<head />
 				<body
 					className={cn(
-						"min-h-screen bg-background font-sans antialiased",
+						"min-h-screen overflow-y-scroll bg-background font-sans antialiased",
 						fontMono.variable
 					)}
 				>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<IsClientCtxProvider>
-							<div className="relative flex min-h-screen flex-col">
+							<div className="relative flex min-h-screen flex-col overflow-y-hidden">
 								<CoolEffect>
 									<SiteHeader />
 									<div className="flex items-center justify-center">{children}</div>

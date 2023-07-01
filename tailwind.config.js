@@ -65,10 +65,16 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+				"rotate": {
+					from: { transform: "rotate(0deg)" },
+					"50%": { transform: "scale(1, 1.5) rotate(180deg)" },
+					to: { transform: "rotate(360deg)" },
+				}
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+				"rotate": "rotate 20s infinite"
       },
     },
   },
