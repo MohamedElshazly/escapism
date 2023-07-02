@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Projects = () => {
 	return (
-		<div className="z-20 flex flex-col items-center justify-center gap-10 font-mono">
+		<div className="z-20 flex flex-col items-center justify-center gap-10 overflow-x-hidden font-mono">
 			<h1 className='mt-16 text-3xl'>My Projects</h1>
 			<div className="mb-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
 
