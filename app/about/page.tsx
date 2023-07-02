@@ -9,7 +9,7 @@ const About = () => {
 			<Image src="/me.jpg" width={300} height={300} alt='pic of me' className="hidden rounded-3xl md:flex" />
 			<Image src="/me2.jpeg" width={300} height={300} alt='pic of me' className="flex rounded-full md:hidden" />
 			<div className="flex flex-col items-center justify-center gap-4">
-				<p className='mx-10 text-center text-base font-bold md:text-lg'>
+				<p className='mx-10 text-center text-base font-bold md:text-left md:text-lg'>
 					I'm a <span className='text-primary'>Junior Developer</span> with a strong
 					eye for innovative design and a
 					keen understanding of new
