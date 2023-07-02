@@ -9,22 +9,22 @@ export const siteConfig = {
       title: "Home",
       href: "/",
     },
-		{
-			title: "About me",
-			href: "/about",
-		},
-		{
-			title: "Projects",
-			href: "/projects",
-		},
-		{
-			title: "Blog",
-			href: "/blog",
-		}
+    {
+      title: "About me",
+      href: "/about",
+    },
+    {
+      title: "Projects",
+      href: "/projects",
+    },
+    {
+      title: "Blog",
+      href: "/blog",
+    },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
+    twitter: "https://twitter.com/SillyFarts9000",
     github: "https://github.com/MohamedElshazly",
-		docs: ""
+    docs: "",
   },
 }
