@@ -17,12 +17,12 @@ const Projects = () => {
 			<h1 className='mt-16 text-3xl'>My Projects</h1>
 			<div className="mb-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
 
-				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
+				<Card className="relative mx-24 flex flex-col md:mx-0 md:w-96">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Post Rock</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<CardDescription className="mb-20 flex flex-col gap-5">
+						<CardDescription className="mb-20 flex flex-col items-center gap-5">
 							<Image alt="p" src={"/p1.png"} width={320} height={120} />
 							Post Rock is a website utilizing Spotify web API to get every song in the Post-Rock genre, it allows users to search for any post-rock band they want, and view all of their albums and tracks. Users can play the preview of the songs, then they'd be redirected to Spotify to listen to the full song with a click of a button.
 						</CardDescription>
@@ -33,12 +33,12 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
+				<Card className="relative mx-24 flex flex-col md:mx-0 md:w-96">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Kanban board</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<CardDescription className="mb-20 flex flex-col gap-5">
+						<CardDescription className="mb-20 flex flex-col items-center gap-5">
 							<Image alt="p" src={"/kanban.png"} width={320} height={120} />
 							Kanban board is a website that allows users to add tasks to a kanban board, and move them between columns, they can also export the tasks into JSON, and import an already existing JSON into tasks. The website is built using React.js, and React dnd.
 						</CardDescription>
@@ -49,12 +49,12 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
+				<Card className="relative mx-24 flex flex-col md:mx-0 md:w-96">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Javascript Calculator</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<CardDescription className="mb-20 flex flex-col gap-5">
+						<CardDescription className="mb-20 flex flex-col items-center gap-5">
 							<Image alt="p" src={"/calculator.png"} width={320} height={120} />
 							A simple calculator built using Javascript. It allows users to do simple calculations.
 						</CardDescription>
@@ -65,12 +65,12 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
+				<Card className="relative mx-24 flex flex-col md:mx-0 md:w-96">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Etch a Sketch</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<CardDescription className="mb-20 flex flex-col gap-5">
+						<CardDescription className="mb-20 flex flex-col items-center gap-5">
 							<Image alt="p" src={"/etch.png"} width={320} height={120} />
 							A recreation of the game 'Etch A Sketch' on the web, where you have two modes, drawing and deleting. You can also resize and reset the canvas however you want.
 							In this project, I aimed to demonstrate my DOM manipulation skills, and design.
@@ -82,12 +82,12 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
+				<Card className="relative mx-24 flex flex-col md:mx-0 md:w-96">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Library</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<CardDescription className="mb-20 flex flex-col gap-5">
+						<CardDescription className="mb-20 flex flex-col items-center gap-5">
 							<Image alt="p" src={"/library.png"} width={320} height={120} />
 							Library is a website that allows users to add books to a library. Users can also delete books from the library, mark them as read or not, etc.
 						</CardDescription>
@@ -98,12 +98,12 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
+				<Card className="relative mx-24 flex flex-col md:mx-0 md:w-96">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Tic Tac Toe</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<CardDescription className="mb-20 flex flex-col gap-5">
+						<CardDescription className="mb-20 flex flex-col items-center gap-5">
 							<Image alt="p" src={"/tic.png"} width={320} height={120} />
 							Simple Tic Tac Toe game built using Javascript.
 						</CardDescription>
