@@ -22,10 +22,10 @@ export function CoolEffect({ children }: LayoutProps) {
 	}, []);
 
 	return (
-			<main className="">
-			<div ref={ref1} id="blob" className="animate-rotate absolute left-[50%] top-[50%] hidden aspect-[1/1] h-[25vmax] translate-x-[-50%] translate-y-[-50%] rounded-[50%] bg-white bg-gradient-to-r from-[#7FFFD4] to-[#4916af] md:flex"></div>
+		<main className="">
+			<div ref={ref1} id="blob" className="absolute left-[50%] top-[50%] hidden aspect-[1/1] h-[25vmax] translate-x-[-50%] translate-y-[-50%] animate-rotate rounded-[50%] bg-white bg-gradient-to-r from-[#7FFFD4] to-[#4916af] md:flex"></div>
 			<div className="absolute z-10 hidden h-full w-full overflow-hidden backdrop-blur-[9vmax] md:flex"></div>
-				{children}
-			</main>
+			{children}
+		</main>
 	)
 }
