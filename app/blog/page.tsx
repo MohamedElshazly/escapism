@@ -3,13 +3,13 @@ import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 
 
-const About = () => {
+const Blog = () => {
 	return (
-		<div className="z-30 flex h-screen flex-col items-center justify-center gap-5 font-mono">
+		<div className="z-30 flex h-screen flex-col items-center justify-center gap-5 ">
 			<h1>Blog is coming soon...</h1>
-			<Link href="/" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary font-mono hover:border-primary" })}>Home</Link>
+			<Link href="/" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary  hover:border-primary" })}>Home</Link>
 		</div>
 	);
 }
 
-export default About;
+export default Blog;

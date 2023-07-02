@@ -2,7 +2,7 @@ import "@/styles/globals.css"
 import { Metadata } from "next"
 
 import { siteConfig } from "@/config/site"
-import { fontSans, fontMono } from "@/lib/fonts"
+import { fontSans, fontMono, fontTitRegular } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
@@ -46,12 +46,12 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<>
-			<html lang="en" suppressHydrationWarning className={`${futureFont.variable} font-sans`}>
+			<html lang="en" suppressHydrationWarning className={`${fontTitRegular.variable} font-sans`}>
 				<head />
 				<body
 					className={cn(
 						"min-h-screen overflow-y-scroll bg-background font-sans antialiased",
-						fontMono.variable
+						fontTitRegular.variable
 					)}
 				>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>

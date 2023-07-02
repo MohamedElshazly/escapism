@@ -23,8 +23,8 @@ const About = () => {
 					like Django and Flask.
 				</p>
 				<div className="mb-10 flex items-center justify-center gap-5">
-					<Link href="/projects" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary font-mono hover:border-primary" })}>My Projects!</Link>
-					<Link href="/cv.pdf" download={"cv"} className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary font-mono hover:border-primary" })}>CV</Link>
+					<Link href="/projects" className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary hover:border-primary" })}>My Projects!</Link>
+					<Link href="/cv.pdf" download={"cv"} className={buttonVariants({ variant: "outline", size: "lg", className: "bg-secondary hover:border-primary" })}>CV</Link>
 				</div>
 			</div>
 		</div>
