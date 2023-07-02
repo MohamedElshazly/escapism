@@ -17,7 +17,7 @@ const Projects = () => {
 			<h1 className='mt-16 text-3xl'>My Projects</h1>
 			<div className="mb-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
 
-				<Card className="relative flex w-96 flex-col">
+				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Post Rock</CardTitle>
 					</CardHeader>
@@ -33,7 +33,7 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative flex w-96 flex-col">
+				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Kanban board</CardTitle>
 					</CardHeader>
@@ -49,7 +49,7 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative flex w-96 flex-col">
+				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Javascript Calculator</CardTitle>
 					</CardHeader>
@@ -65,7 +65,7 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative flex w-96 flex-col">
+				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Etch a Sketch</CardTitle>
 					</CardHeader>
@@ -82,7 +82,7 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative flex w-96 flex-col">
+				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Library</CardTitle>
 					</CardHeader>
@@ -98,7 +98,7 @@ const Projects = () => {
 					</CardFooter>
 				</Card>
 
-				<Card className="relative flex w-96 flex-col">
+				<Card className="relative mx-16 flex w-96 flex-col md:mx-0">
 					<CardHeader>
 						<CardTitle className="flex justify-center text-primary">Tic Tac Toe</CardTitle>
 					</CardHeader>
