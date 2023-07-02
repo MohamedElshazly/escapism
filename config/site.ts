@@ -25,6 +25,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/SillyFarts9000",
     github: "https://github.com/MohamedElshazly",
+    linkedin: "https://www.linkedin.com/in/mohamed-elshazly-4b1429148",
     docs: "",
   },
 }
